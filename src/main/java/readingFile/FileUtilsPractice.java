@@ -18,7 +18,7 @@ public class FileUtilsPractice {
         String[] words = StringUtils.split(fileContents);
         Set<String> uniqueWords = new HashSet<>();
         for (String word : words) {
-            uniqueWords.add(word);
+            uniqueWords.add(word.toLowerCase());
         }
         int uniqueWordsCount = uniqueWords.size();
         File outputFile = new File("Output.txt");
